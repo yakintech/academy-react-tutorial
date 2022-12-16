@@ -2,6 +2,8 @@ import IfElseSample from "./JsxSample/IfElseSample"
 import MapSample from "./JsxSample/MapSample"
 import ProductPage from "./JsxSample/ProductPage";
 import UserDetail from "./PropsSample/UserDetail"
+import ArraySample from "./StateSample/ArraySample";
+import CounterSample from "./StateSample/CounterSample";
 
 
 function App() {
@@ -11,10 +13,9 @@ function App() {
 
 
   return <>
-    <ProductPage />
-    <MapSample />
-    <IfElseSample></IfElseSample>
-    <UserDetail name='Çağatay' surname='Yıldız' age={18} cities={cities} />
+    <ArraySample />
+    {/* <CounterSample/> */}
+    {/* <ProductPage/> */}
   </>
 }
 

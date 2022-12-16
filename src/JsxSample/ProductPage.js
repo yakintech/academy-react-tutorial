@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function ProductPage() {
 
-    let products = [
+    let originalProducts = [
         {
             "id": 4,
             "supplierId": 2,
@@ -967,32 +967,48 @@ function ProductPage() {
         }
     ]
 
+    const [products, setproducts] = useState(originalProducts)
 
-    return (<table className="w3-table-all">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Unit Price</th>
-                <th>Units In Stock</th>
-            </tr>
-        </thead>
-        <tbody>
-            {
-                products.map(item =>{
-                 return   <tr>
-                        <td>{item.id}</td>
-                        <td>{item.name}</td>
-                        <td>{item.unitPrice}</td>
-                        <td>{item.unitsInStock}</td>
+    const clear = () => {
+        setproducts([]);
+        //products = [];
+        // console.log('Products ', products);
+        // document.querySelector('tbody').innerHTML = '';
+    }
+
+    return (
+        <>
+        <h1>Length: {products.length}</h1>
+        {/* <button onClick={clear}>Clear All Data</button> */}
+        <button onClick={() => clear()}>Clear All Data</button>
+            <table className="w3-table-all">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Unit Price</th>
+                        <th>Units In Stock</th>
                     </tr>
-                })
-            }
-        </tbody>
-    </table>
+                </thead>
+                <tbody>
+                    {
+                        products.map(item => {
+                            return <tr>
+                                <td>{item.id}</td>
+                                <td>{item.name}</td>
+                                <td>{item.unitPrice}</td>
+                                <td>{item.unitsInStock}</td>
+                            </tr>
+                        })
+                    }
+                </tbody>
+            </table>
+        </>
+
     )
 }
 
-//unitPRice > 20 ise raw tomato olsun
+//unitPRice > 20 ise raw backgroundColor tomato olsun
+//name 'a' ile başlıyorsa raw backgroundColor aquamarine olsun
 
 export default ProductPage
