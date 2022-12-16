@@ -1,6 +1,6 @@
 import React from 'react'
 
-function SupplierPage() {
+function ProductPage() {
 
     let products = [
         {
@@ -968,12 +968,31 @@ function SupplierPage() {
     ]
 
 
-    return (<table>
+    return (<table className="w3-table-all">
         <thead>
-
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Unit Price</th>
+                <th>Units In Stock</th>
+            </tr>
         </thead>
+        <tbody>
+            {
+                products.map(item =>{
+                 return   <tr>
+                        <td>{item.id}</td>
+                        <td>{item.name}</td>
+                        <td>{item.unitPrice}</td>
+                        <td>{item.unitsInStock}</td>
+                    </tr>
+                })
+            }
+        </tbody>
     </table>
     )
 }
 
-export default SupplierPage
+//unitPRice > 20 ise raw tomato olsun
+
+export default ProductPage
