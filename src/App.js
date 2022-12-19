@@ -6,6 +6,9 @@ import ArraySample from "./StateSample/ArraySample";
 import CounterSample from "./StateSample/CounterSample";
 import InputSample from "./StateSample/InputSample";
 import SupplierPage from "./StateSample/SupplierPage";
+import EffectSample from "./effectFetch/EffectSample";
+import EffectFetch from "./effectFetch/EffectFetch";
+import ToDos from "./effectFetch/ToDos";
 
 
 function App() {
@@ -15,7 +18,10 @@ function App() {
 
 
   return <>
-  <ProductPage/>
+  <ToDos/>
+  {/* <EffectFetch/> */}
+  {/* <EffectSample/>
+  <ProductPage/> */}
   {/* <InputSample/> */}
     {/* <SupplierPage /> */}
     {/* <ArraySample /> */}
