@@ -4,6 +4,7 @@ import ProductPage from "./JsxSample/ProductPage";
 import UserDetail from "./PropsSample/UserDetail"
 import ArraySample from "./StateSample/ArraySample";
 import CounterSample from "./StateSample/CounterSample";
+import SupplierPage from "./StateSample/SupplierPage";
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
 
 
   return <>
-    <ArraySample />
+    <SupplierPage />
+    {/* <ArraySample /> */}
     {/* <CounterSample/> */}
     {/* <ProductPage/> */}
   </>
