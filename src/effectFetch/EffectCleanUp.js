@@ -17,8 +17,6 @@ function EffectCleanUp() {
         }
     }, [counter])
 
-
-
     useEffect(() => {
         let controller = new AbortController();
         const signal = controller.signal;
@@ -33,8 +31,6 @@ function EffectCleanUp() {
             controller.abort();
         }
     }, [])
-
-
 
     return (<>
         <div>

@@ -8,17 +8,13 @@ function CounterSample() {
 
     console.log('Counter component render!');
 
-    const increase = () => {
-        setcounter(counter + 1);
-    }
+
 
     return (<>
-        <h1>{counter}</h1>
-        <h2>{counter}</h2>
-        <h3>{counter}</h3>
-        <p>{counter}</p>
+        <h1>Counter: {counter}</h1>
+        <h1>Çağatay Yıldız</h1>
 
-        <button onClick={() => increase()}>Increase</button>
+        <button onClick={() =>  setcounter(5)}>Increase</button>
     </>
     )
 }
