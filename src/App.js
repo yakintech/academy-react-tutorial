@@ -12,6 +12,9 @@ function App() {
         <li><Link to='/contact'>Contact</Link></li>
         <li><Link to='/about'>About</Link></li>
         <li><Link to='/users'>Users</Link></li>
+        <li><Link to='/sayac'>Sayaç</Link></li>
+        <li><Link to='/sayac2'>Sayaç-2</Link></li>
+
 
       </ul>
     </div>

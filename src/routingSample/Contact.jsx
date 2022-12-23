@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { sayacContext } from '../contextSample/SayacContext';
 
 function Contact() {
 
-    console.log('CONTACT RENDER');
-  return (
-    <div>Contact</div>
+  let { sayac, setsayac } = useContext(sayacContext);
+
+
+  
+  return (<>
+    <button onClick={() => setsayac(sayac + 1)}>Increase</button>
+  </>
   )
 }
 

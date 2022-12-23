@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { sayacContext } from '../contextSample/SayacContext'
 
 function Home() {
-  return (
-    <div>Home</div>
+
+
+  let { cities } = useContext(sayacContext)
+
+  return (<>
+    <ul>
+      {
+        cities.map((item) => <li>{item}</li>)
+      }
+    </ul>
+  </>
   )
 }
 

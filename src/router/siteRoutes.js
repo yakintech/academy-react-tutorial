@@ -1,3 +1,5 @@
+import Sayac from "../contextSample/Sayac";
+import Sayac2 from "../contextSample/Sayac2";
 import About from "../routingSample/About";
 import Contact from "../routingSample/Contact";
 import Home from "../routingSample/Home";
@@ -19,10 +21,20 @@ export const siteRoutes = [
     },{
         path:'/users',
         element:<Users/>
-    },{
+    },
+    {
         path:'/users/:id',
         element:<UserDetail/>
-    },{
+    },
+    {
+        path:'/sayac',
+        element:<Sayac/>
+    },
+    {
+        path:'/sayac2',
+        element:<Sayac2/>
+    },
+    {
         path:'*',
         element:<NoMatch/>
     },

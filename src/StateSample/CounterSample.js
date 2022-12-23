@@ -6,7 +6,7 @@ function CounterSample() {
     const [counter, setcounter ] = useState(0);
     
 
-    console.log('Counter component render!');
+    console.log('Counter component RENDER!');
 
 
 
