@@ -10,7 +10,7 @@ function Parent({children}) {
     //
     //
     //
-    
+
 
   return children
 }

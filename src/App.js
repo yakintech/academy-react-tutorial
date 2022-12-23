@@ -14,6 +14,9 @@ function App() {
         <li><Link to='/users'>Users</Link></li>
         <li><Link to='/sayac'>Sayaç</Link></li>
         <li><Link to='/sayac2'>Sayaç-2</Link></li>
+        <li><Link to='/products'>Products</Link></li>
+        <li><Link to='/favorites'>Favorites</Link></li>
+        
 
 
       </ul>

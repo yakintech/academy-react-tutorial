@@ -1,5 +1,7 @@
 import Child from "../children/Child";
 import Parent from "../children/Parent";
+import Favorites from "../contextSample/Favorites";
+import Products from "../contextSample/Products";
 import Sayac from "../contextSample/Sayac";
 import Sayac2 from "../contextSample/Sayac2";
 import About from "../routingSample/About";
@@ -39,6 +41,14 @@ export const siteRoutes = [
     {
         path:'/parent',
         element:<Parent><Child></Child></Parent>
+    },
+    {
+        path:'/products',
+        element:<Products></Products>
+    },
+    {
+        path:'/favorites',
+        element:<Favorites/>
     },
     {
         path:'*',
