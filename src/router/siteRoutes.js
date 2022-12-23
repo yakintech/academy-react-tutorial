@@ -1,3 +1,5 @@
+import Child from "../children/Child";
+import Parent from "../children/Parent";
 import Sayac from "../contextSample/Sayac";
 import Sayac2 from "../contextSample/Sayac2";
 import About from "../routingSample/About";
@@ -33,6 +35,10 @@ export const siteRoutes = [
     {
         path:'/sayac2',
         element:<Sayac2/>
+    },
+    {
+        path:'/parent',
+        element:<Parent><Child></Child></Parent>
     },
     {
         path:'*',

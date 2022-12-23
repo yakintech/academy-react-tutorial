@@ -1,6 +1,5 @@
 import { createContext, useState } from "react";
 
-
 export const sayacContext = createContext(null);
 
 export const SayacProvider = ({ children }) => {
