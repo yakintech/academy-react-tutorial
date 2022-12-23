@@ -7,7 +7,6 @@ function Favorites() {
 
 
     const deleteItem = (id) => {
-
         let filteredFavorites = favorites.filter(q => q.id != id);
         setfavorites([...filteredFavorites])
     }
