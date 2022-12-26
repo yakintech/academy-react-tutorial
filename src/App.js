@@ -13,6 +13,17 @@ function App() {
     token: { colorBgContainer },
   } = theme.useToken();
 
+
+  let menus = [{
+      key: 1,
+      label: <Link to='/productstable'>Products</Link>
+  },
+  {
+    key: 2,
+    label: <Link to='/addproductform'>Add Product</Link>
+}
+]
+
   return <Layout>
     <Header
       style={{
@@ -35,10 +46,7 @@ function App() {
         theme="dark"
         mode="horizontal"
         defaultSelectedKeys={['2']}
-        items={new Array(3).fill(null).map((_, index) => ({
-          key: String(index + 1),
-          label: `nav ${index + 1}`,
-        }))}
+        items={menus}
       />
     </Header>
     <Content

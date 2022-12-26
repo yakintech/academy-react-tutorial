@@ -1,4 +1,6 @@
+import AddProductForm from "../antdSample/AddProductForm";
 import AntdSample from "../antdSample/AntdSample";
+import ProductsTable from "../antdSample/ProductsTable";
 import Child from "../children/Child";
 import Parent from "../children/Parent";
 import Favorites from "../contextSample/Favorites";
@@ -54,6 +56,14 @@ export const siteRoutes = [
     {
         path:'/antd',
         element:<AntdSample/>
+    },
+    {
+        path:'/productstable',
+        element:<ProductsTable/>
+    },
+    {
+        path:'/addproductform',
+        element:<AddProductForm/>
     },
     {
         path:'*',
