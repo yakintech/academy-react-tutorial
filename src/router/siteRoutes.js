@@ -1,3 +1,4 @@
+import AntdSample from "../antdSample/AntdSample";
 import Child from "../children/Child";
 import Parent from "../children/Parent";
 import Favorites from "../contextSample/Favorites";
@@ -49,6 +50,10 @@ export const siteRoutes = [
     {
         path:'/favorites',
         element:<Favorites/>
+    },
+    {
+        path:'/antd',
+        element:<AntdSample/>
     },
     {
         path:'*',
