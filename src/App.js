@@ -2,6 +2,7 @@ import { Link, Route, Routes } from "react-router-dom"
 import { siteRoutes } from "./router/siteRoutes"
 
 import { Layout, Menu, theme } from 'antd';
+import MaterialGrid from "./materialSample/MaterialGrid";
 const { Header, Content, Footer } = Layout;
 
 
@@ -15,14 +16,31 @@ function App() {
 
 
   let menus = [{
-      key: 1,
-      label: <Link to='/productstable'>Products</Link>
+    key: 1,
+    label: <Link to='/productstable'>Products</Link>
   },
   {
     key: 2,
     label: <Link to='/addproductform'>Add Product</Link>
-}
-]
+  },
+
+  {
+    key: 3,
+    label: <Link to='/materialcore'>Material Core</Link>
+  },
+  {
+    key: 4,
+    label: <Link to='/materialgrid'>Material Grid</Link>
+  },
+  {
+    key: 5,
+    label: <Link to='/addcategoryform'>Add AddCategoryForm - Formik</Link>
+  },
+  {
+    key: 5,
+    label: <Link to='/addcategoryform2'>Add AddCategoryForm2 - Formik</Link>
+  },
+  ]
 
   return <Layout>
     <Header

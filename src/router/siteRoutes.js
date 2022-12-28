@@ -7,6 +7,10 @@ import Favorites from "../contextSample/Favorites";
 import Products from "../contextSample/Products";
 import Sayac from "../contextSample/Sayac";
 import Sayac2 from "../contextSample/Sayac2";
+import AddCategoryForm from "../formikSample/AddCategoryForm";
+import AddCategoryForm2 from "../formikSample/AddCategoryForm2";
+import MaterialCore from "../materialSample/MaterialCore";
+import MaterialGrid from "../materialSample/MaterialGrid";
 import About from "../routingSample/About";
 import Contact from "../routingSample/Contact";
 import Home from "../routingSample/Home";
@@ -64,6 +68,22 @@ export const siteRoutes = [
     {
         path:'/addproductform',
         element:<AddProductForm/>
+    },
+    {
+        path:'/materialcore',
+        element:<MaterialCore/>
+    },
+    {
+        path:'/materialgrid',
+        element:<MaterialGrid/>
+    },
+    {
+        path:'/addcategoryform',
+        element:<AddCategoryForm/>
+    },
+    {
+        path:'/addcategoryform2',
+        element:<AddCategoryForm2/>
     },
     {
         path:'*',
